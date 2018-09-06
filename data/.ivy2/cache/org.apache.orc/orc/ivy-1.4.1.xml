@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.apache.orc"
+		module="orc"
+		revision="1.4.1"
+		status="release"
+		publication="20171017095800"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://orc.apache.org">
+		ORC is a self-describing type-aware columnar file format designed
+     for Hadoop workloads. It is optimized for large streaming reads,
+     but with integrated support for finding required rows
+     quickly. Storing data in a columnar format lets the reader read,
+     decompress, and process only the values that are required for the
+     current query.
+		</description>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_8>org.mortbay.jetty__jetty-util</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_8>
+		<m:dependency.management__commons-codec__commons-codec__version>1.4</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_9>tomcat__jasper-runtime</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_9>
+		<m:dependency.management__org.apache.hive__hive-common__exclusion_1>org.apache.hive__hive-orc</m:dependency.management__org.apache.hive__hive-common__exclusion_1>
+		<m:dependency.management__org.apache.hive__hive-common__exclusion_0>org.apache.hive__hive-storage-api</m:dependency.management__org.apache.hive__hive-common__exclusion_0>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_0>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__scope>runtime</m:dependency.management__org.apache.zookeeper__zookeeper__scope>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_1>commons-daemon__commons-daemon</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_1>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__version>2.6.4</m:dependency.management__org.apache.hadoop__hadoop-hdfs__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_2>io.netty__netty</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_2>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_3>javax.servlet__servlet-api</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_3>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_4>javax.servlet.jsp__jsp-api</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_4>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_5>org.apache.avro__avro</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_5>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_6>org.codehaus.jackson__jackson-mapper-asl</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_6>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_7>org.mortbay.jetty__jetty</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_7>
+		<m:dependency.management__org.apache.orc__orc-mapreduce__version>1.4.1</m:dependency.management__org.apache.orc__orc-mapreduce__version>
+		<m:properties__hadoop.version>2.6.4</m:properties__hadoop.version>
+		<m:dependency.management__org.threeten__threetenbp__version>1.3.5</m:dependency.management__org.threeten__threetenbp__version>
+		<m:dependency.management__org.apache.parquet__parquet-hadoop-bundle__version>1.8.2</m:dependency.management__org.apache.parquet__parquet-hadoop-bundle__version>
+		<m:dependency.management__org.apache.avro__avro-mapred__version>1.8.1</m:dependency.management__org.apache.avro__avro-mapred__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:dependency.management__org.mockito__mockito-core__version>1.9.5</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.hamcrest__hamcrest-core__scope>test</m:dependency.management__org.hamcrest__hamcrest-core__scope>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.5</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.apache.mrunit__mrunit__version>1.1.0</m:dependency.management__org.apache.mrunit__mrunit__version>
+		<m:dependency.management__org.apache.hive__hive-serde__exclusion_0>org.apache.hive__hive-storage-api</m:dependency.management__org.apache.hive__hive-serde__exclusion_0>
+		<m:dependency.management__org.apache.hive__hive-serde__exclusion_1>org.apache.hive__hive-orc</m:dependency.management__org.apache.hive__hive-serde__exclusion_1>
+		<m:dependency.management__org.apache.commons__commons-csv__version>1.4</m:dependency.management__org.apache.commons__commons-csv__version>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__version>3.4.6</m:dependency.management__org.apache.zookeeper__zookeeper__version>
+		<m:dependency.management__com.google.code.gson__gson__version>2.2.4</m:dependency.management__com.google.code.gson__gson__version>
+		<m:dependency.management__org.apache.hive__hive-common__version>2.1.1</m:dependency.management__org.apache.hive__hive-common__version>
+		<m:dependency.management__org.apache.hive__hive-serde__version>2.1.1</m:dependency.management__org.apache.hive__hive-serde__version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_0>io.netty__netty</m:dependency.management__org.apache.zookeeper__zookeeper__exclusion_0>
+		<m:dependency.management__org.apache.hive__hive-exec__exclusion_0>org.apache.hive__hive-storage-api</m:dependency.management__org.apache.hive__hive-exec__exclusion_0>
+		<m:dependency.management__org.apache.hive__hive-exec__exclusion_1>org.apache.hive__hive-orc</m:dependency.management__org.apache.hive__hive-exec__exclusion_1>
+		<m:properties__zookeeper.version>3.4.6</m:properties__zookeeper.version>
+		<m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_10>xerces__xercesImpl</m:dependency.management__org.apache.hadoop__hadoop-hdfs__exclusion_10>
+		<e:sbtTransformHash>1d535fd1d8f98045742299972a8c1900356bb3a3</e:sbtTransformHash>
+		<m:properties__maven.compiler.target>1.6</m:properties__maven.compiler.target>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__2.10.4|org.apache.maven.plugins__maven-antrun-plugin__1.7|org.apache.maven.plugins__maven-surefire-plugin__2.16|org.apache.maven.plugins__maven-project-info-reports-plugin__2.9|org.codehaus.mojo__findbugs-maven-plugin__3.0.3|org.apache.rat__apache-rat-plugin__null|org.apache.rat__apache-rat-plugin__0.10</m:maven.plugins>
+		<m:dependency.management__org.apache.orc__orc-tools__version>1.4.1</m:dependency.management__org.apache.orc__orc-tools__version>
+		<m:properties__storage-api.version>2.2.1</m:properties__storage-api.version>
+		<m:dependency.management__org.apache.orc__orc-core__version>1.4.1</m:dependency.management__org.apache.orc__orc-core__version>
+		<m:dependency.management__com.google.protobuf__protobuf-java__version>2.5.0</m:dependency.management__com.google.protobuf__protobuf-java__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__version>2.6.4</m:dependency.management__org.apache.hadoop__hadoop-common__version>
+		<m:dependency.management__com.google.guava__guava__version>11.0.2</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:properties__maven.compiler.useIncrementalCompilation>false</m:properties__maven.compiler.useIncrementalCompilation>
+		<m:properties__test.tmp.dir>${project.build.directory}/testing-tmp</m:properties__test.tmp.dir>
+		<m:properties__avro.version>1.8.1</m:properties__avro.version>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:dependency.management__org.jodd__jodd-core__scope>runtime</m:dependency.management__org.jodd__jodd-core__scope>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__hive.version>2.1.1</m:properties__hive.version>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__version>2.6.4</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_14>tomcat__jasper-runtime</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_14>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_13>tomcat__jasper-compiler</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_13>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_10>org.mortbay.jetty__jetty</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_10>
+		<m:dependency.management__commons-cli__commons-cli__version>1.3.1</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.5</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_12>org.apache.avro__avro</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_12>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_11>org.mortbay.jetty__jetty-util</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_11>
+		<m:dependency.management__org.codehaus.jettison__jettison__exclusion_0>stax__stax-api</m:dependency.management__org.codehaus.jettison__jettison__exclusion_0>
+		<m:dependency.management__org.apache.avro__avro__version>1.8.1</m:dependency.management__org.apache.avro__avro__version>
+		<m:dependency.management__org.codehaus.jettison__jettison__version>1.1</m:dependency.management__org.codehaus.jettison__jettison__version>
+		<m:dependency.management__org.mockito__mockito-core__scope>test</m:dependency.management__org.mockito__mockito-core__scope>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>2.8.4</m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:dependency.management__org.apache.hive__hive-storage-api__version>2.2.1</m:dependency.management__org.apache.hive__hive-storage-api__version>
+		<m:dependency.management__com.esotericsoftware__kryo-shaded__version>3.0.3</m:dependency.management__com.esotericsoftware__kryo-shaded__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_6>javax.servlet.jsp__jsp-api</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_6>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_7>net.java.dev.jets3t__jets3t</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_7>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_8>org.apache.curator__curator-recipes</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_8>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_9>org.codehaus.jackson__jackson-mapper-asl</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_9>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_2>commons-daemon__commons-daemon</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_2>
+		<m:dependency.management__org.openjdk.jmh__jmh-core__version>1.18</m:dependency.management__org.openjdk.jmh__jmh-core__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_3>commons-digester__commons-digester</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_3>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_4>commons-el__commons-el</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_4>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_5>javax.servlet__servlet-api</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_5>
+		<m:dependency.management__org.apache.hive__hive-exec__version>2.1.1</m:dependency.management__org.apache.hive__hive-exec__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_5>org.apache.avro__avro</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_5>
+		<m:dependency.management__org.apache.mrunit__mrunit__scope>test</m:dependency.management__org.apache.mrunit__mrunit__scope>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__surefire.version>2.19.1</m:properties__surefire.version>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_3>org.mortbay.jetty__jetty</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_3>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_4>org.mortbay.jetty__jetty-util</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_4>
+		<m:dependency.management__org.hamcrest__hamcrest-core__version>1.3</m:dependency.management__org.hamcrest__hamcrest-core__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_1>javax.servlet__servlet-api</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_1>
+		<m:properties__example.dir>${project.basedir}/../../examples</m:properties__example.dir>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_2>javax.servlet.jsp__jsp-api</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_2>
+		<m:dependency.management__io.airlift__aircompressor__version>0.8</m:dependency.management__io.airlift__aircompressor__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__exclusion_0>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_0>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_1>com.sun.jersey__jersey-json</m:dependency.management__org.apache.hadoop__hadoop-common__exclusion_1>
+		<m:dependency.management__org.jodd__jodd-core__version>3.5.2</m:dependency.management__org.jodd__jodd-core__version>
+		<m:properties__maven.compiler.source>1.6</m:properties__maven.compiler.source>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>
